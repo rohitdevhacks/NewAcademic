@@ -28,6 +28,7 @@ namespace AcademicsWebsiteProject.Controllers
         public IActionResult SignIn() 
         {
             return View();
+            //rohith
         }
         [HttpPost]
         public IActionResult SignIn(SignIn log)
@@ -37,8 +38,7 @@ namespace AcademicsWebsiteProject.Controllers
             {
                 bool us = data.Username.Equals(log.Username) && data.Password.Equals(log.Password);
                 if (us)
-                {
-                    
+                { 
                     return RedirectToAction("Index", "Home");
                 }
                 else

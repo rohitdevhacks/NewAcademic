@@ -10,5 +10,6 @@ namespace AcademicsWebsiteProject.Data
 
         }
         public DbSet<User> UserInfo { get; set; }
+        public DbSet<AddCourse> addCourse { get; set; }
     }
 }
